@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background: #fafafa;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  height: 2000px;
+}
+
+a {
+  text-decoration: none;
+  transition: color 600ms ease;
+}
+
+img {max-width: 100%}
+
+header {
+  width: 90%;
+  padding: 20px 5%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*по вертикалі по центру*/
+  position: sticky;
+  top: 0px;
+}
+
+header > .logo {
+  font-size: 25px;
+  font-weight: 700;
+  display: block;
+  height: 40px;
+  width: 160px;
+  background: black;
+  color: white;
+  line-height: 40px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+header > .nav {
+  position: relative;
+  left: -50px;
+}
+
+header > .nav a {
+  margin: 0 15px;
+  display: inline-block;
+  color: #a3a3a3;
+}
+
+header > .nav a:hover,
+header > .menu:hover {color: #4f4e4e}
+
+header > .menu {
+  cursor: pointer;
+  color: #a3a3a3;
+  font-size: 23px;
+}
+
+.full-page {
+  height: 95vh;
+  background: url('img/home.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #3b3b3b;
+  text-align: center;
+  color: #fff;
+}
+
+.full-page h1 {
+  padding-top: 250px;
+  font-size: 45px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.full-page h3 {
+  margin: 20px 0;
+  font-size: 15px;
+  text-transform: uppercase; /*Букви у верхньому регістрі*/
+  font-weight: 500;
+  color: #ccc;
+}
+
+.full-page button {
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  cursor:pointer;
+  background: #ffc107;
+  color: #704404;
+  font-weight: 500;
+  transition: background 600ms ease;
+}
+
+.full-page button i {
+  margin-left: 5px;
+  transition:  margin 600ms ease;
+}
+
+.full-page button:hover {background: #ff9800}
+
+.full-page button:hover i {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.tovar > span {
+  display: block;
+  position: inherit;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+.features_first, .features_second {
+  display: flex;
+  justify-content:space-between;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.features_first > div, .features_second > div {
+  width: 200px;
+  text-align: center;
+  margin: 50px 10px;
+}
+
+.features_first > div img, .features_second > div  img {
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.features_first > div h4, .features_second > div h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #454545;
+}
+
+.gallery {
+  padding: 50px 17% 50px 23%;
+  border-top: 2px solid silver;
+}
+
+.gallery div {
+  margin-top: 10px;
+  margin-right:50px;
+}
+
+.gallery div img {
+  width: 500px;
+  height: 300px;
+}
+
+.gallery > h2 {
+  text-align: center;
+  font-weight: normal;
+  position: relative;
+  right: 50px;
+  color: #a3a3a3;
+  font-size: 24px;
+}
+
+.gallery .arrow-prev,
+.gallery .arrow-next {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  transition: all 600ms ease;
+}
+
+.gallery .arrow-prev {left: -60px}
+.gallery .arrow-next {right: -40px}
+
+.gallery .arrow-prev:hover,
+.gallery .arrow-next:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+footer {
+  height: 50vh;
+  padding: 30px 5%;
+  border-top: 2px solid silver;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-adress {
+  display: flex;
+  justify-content:space-between;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.footer-adress > div {
+ margin: 10px 10px;
+}
+
+.footer-adress > div h3 {
+  margin: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #454545;
+}
+
+.lutsk, .lipiny {
+  height: 300px;
+  width: 300px;
+}
+
+.inst, .viber {
+  height: 100px;
+  width: 100px;
+  margin: 20px 50px;
+}
+
+.tovar > span,
+footer > span {
+  text-align: center;
+  color: #a3a3a3;
+  font-size: 18px;
+}
+
+.tovar > span > h2,
+footer > span > h2 {
+  font-weight: normal;
+  text-align: center;
+}
