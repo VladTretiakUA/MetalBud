@@ -109,6 +109,12 @@ header > .menu {
   transition:  margin 600ms ease;
 }
 
+.full-page button a {
+  color: #704404;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .full-page button:hover {background: #ff9800}
 
 .full-page button:hover i {
